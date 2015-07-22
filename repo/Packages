@@ -1,15 +1,11 @@
-Package: com.massimilianofurlan.test
+Package: com.massimilianofurlan.popuponstart_0.0.1-2_iphoneos-arm
 Version: 1.0
 Architecture: iphoneos-arm
 Maintainer: massimilianofurlan <massimilianofurlan@inventati.org>
-Depends: <bundleids>
-Filename: debs//<deb>
-Size: <deb in bytes>
-MD5sum: <md5 hash of deb>
-SHA1: <sha1 hash of deb>
-SHA256: <sha256 of deb>
-Section: <section on your repo>
-Description: <description>
+Depends: substrate
+Filename: debs/com.massimilianofurlan.popuponstart_0.0.1-2_iphoneos-arm.deb
+Size: 3646
+Description: My first tweak.
 Author: Massimiliano FUrlan <massimilianofurlan@inventati.org>
 Depiction: http://massimilianofurlan.github.io/depic/TweakName/index.html
-Name: Tweakname
+Name: PopupAtStart
