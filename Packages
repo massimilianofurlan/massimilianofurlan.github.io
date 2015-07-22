@@ -1,1 +1,15 @@
-
+Package: com.massimilianofurlan.test
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: massimilianofurlan <massimilianofurlan@inventati.org>
+Depends: <bundleids>
+Filename: debs//<deb>
+Size: <deb in bytes>
+MD5sum: <md5 hash of deb>
+SHA1: <sha1 hash of deb>
+SHA256: <sha256 of deb>
+Section: <section on your repo>
+Description: <description>
+Author: Yourname <email (put in <>)>
+Depiction: http://decimation.github.io/Depic/<depicfoldername>/index.html
+Name: Tweakname
