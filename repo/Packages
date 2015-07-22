@@ -1,0 +1,11 @@
+Package: com.massimilianofurlan.popuponstart_0.0.1-2_iphoneos-arm
+Version: 0.0.1-2
+Architecture: iphoneos-arm
+Maintainer: massimilianofurlan <massimilianofurlan@inventati.org>
+Depends: MobileSubstrate
+Filename: debs//messages/com.decimation.slashes.deb
+Size: 3646
+Description: My first tweak
+Author: Massimiliano Furlan <massimilianofurlan@inventati.org>
+Depiction: http://decimation.github.io/depictions/index.html?p=com.decimation.slashes
+Name: PopupOnStart
