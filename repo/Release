@@ -1,8 +1,8 @@
 Origin: massimilianofurlan's Repo
-Label: massimilianofurlan's Repo
-Suite: experimental
+Label: massimilianofurlan
+Suite: stable
 Version: 1.0
-Codename: massimiliano
+Codename: massimilianofurlan's Repo
 Architectures: iphoneos-arm
 Components: main
 Description: massimilianofurlan's Repo
