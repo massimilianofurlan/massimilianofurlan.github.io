@@ -10,6 +10,6 @@ SHA1: <sha1 hash of deb>
 SHA256: <sha256 of deb>
 Section: <section on your repo>
 Description: <description>
-Author: Yourname <email (put in <>)>
-Depiction: http://decimation.github.io/Depic/<depicfoldername>/index.html
+Author: Massimiliano FUrlan <massimilianofurlan@inventati.org>
+Depiction: http://massimilianofurlan.github.io/depic/TweakName/index.html
 Name: Tweakname
