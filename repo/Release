@@ -1,6 +1,6 @@
 Origin: massimilianofurlan's Repo
-Label: massimilianofurlan
-Suite: stable
+Label: My experimental tweak repo.
+Suite: experimental
 Version: 1.0
 Codename: massimilianofurlan's Repo
 Architectures: iphoneos-arm
