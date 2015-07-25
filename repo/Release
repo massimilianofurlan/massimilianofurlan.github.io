@@ -1,8 +1,8 @@
 Origin: massimilianofurlan's Repo
-Label: My experimental tweak repo.
+Label: massimilianofurlan's Repo
 Suite: experimental
 Version: 1.0
 Codename: massimilianofurlan's Repo
 Architectures: iphoneos-arm
 Components: main
-Description: massimilianofurlan's Repo
+Description: My experimental tweak repo.
