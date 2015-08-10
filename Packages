@@ -1,30 +1,14 @@
-Package: com.massimilianofurla.faggot
-Version: 0.0.1-3
-Architecture: iphoneos-arm
-Maintainer: Massimiliano Furlan
-Installed-Size: 72
-Depends: mobilesubstrate
-Filename: debs/com.massimilianofurla.faggot_0.0.1-3_iphoneos-arm.deb
-Size: 3620
-MD5sum: 5d9789af2cf7384185842344bc5efd1a
-SHA1: 7a7297833b5e3f768d6b5a92020452e67d5b59e9
-SHA256: 9918af7797c2b09d31448742abec284d958b60512d74439c61aeac01350e54d2
-Section: Tweaks
-Description: An awesome MobileSubstrate tweak!
-Author: Massimiliano Furlan
-Name: Faggot
-
 Package: com.massimilianofurlan.popuponstart
-Version: 0.0.1-5
+Version: 0.0.1-6
 Architecture: iphoneos-arm
 Maintainer: Massimiliano Furlan
 Installed-Size: 132
 Depends: mobilesubstrate
-Filename: debs/com.massimilianofurlan.popuponstart_0.0.1-5_iphoneos-arm.deb
-Size: 4902
-MD5sum: 29cacd39629bf25ae9d438af837c15c2
-SHA1: a0268d2bff15031ac673e939e9ff5cb7ca5668a8
-SHA256: 0f6215db2a82e6138a6a677a3731e09a59b5ba5baa8b063fd76c1d7630bbd2af
+Filename: debs/com.massimilianofurlan.popuponstart_0.0.1-6_iphoneos-arm.deb
+Size: 4898
+MD5sum: 31609a1a54160c09cb2af2e145371d0a
+SHA1: a11c0d8b6387beb2c0918c655410a500ee1e7ce0
+SHA256: 1e365f03c65e1cbd6bf8bb1bb6ed7809d454348b2565cf5a444bafac1c273f31
 Section: Tweaks
 Description: An awesome MobileSubstrate tweak!
 Author: Massimiliano Furlan
