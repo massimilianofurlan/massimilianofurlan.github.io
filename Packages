@@ -14,6 +14,22 @@ Description: An awesome MobileSubstrate tweak!
 Author: Massimiliano Furlan
 Name: Faggot
 
+Package: com.massimilianofurlan.faggotalert
+Version: 0.0.1-1
+Architecture: iphoneos-arm
+Maintainer: Massimiliano Furlan
+Installed-Size: 20
+Depends: mobilesubstrate
+Filename: debs/com.massimilianofurlan.faggotalert_0.0.1-1_iphoneos-arm.deb
+Size: 818
+MD5sum: 24641bc60b84c8c21b9f3560c5e1e370
+SHA1: b93eed3b1b7f73cdaf016405adc5fd2442f244c7
+SHA256: b94227b62b14969471df689494e555dbd60d6e73335b113125dfa0ffb92866cc
+Section: Tweaks
+Description: An awesome MobileSubstrate tweak!
+Author: Massimiliano Furlan
+Name: FaggotAlert
+
 Package: com.massimilianofurlan.popuponstart
 Version: 0.0.1-2
 Architecture: iphoneos-arm
