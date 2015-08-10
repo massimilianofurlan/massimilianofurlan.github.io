@@ -1,14 +1,14 @@
 Package: com.massimilianofurlan.popuponstart
-Version: 0.0.1-2
+Version: 0.0.1-3
 Architecture: iphoneos-arm
 Maintainer: Massimiliano Furlan
-Installed-Size: 128
+Installed-Size: 184
 Depends: mobilesubstrate
-Filename: debs/com.massimilianofurlan.popuponstart_0.0.1-2_iphoneos-arm.deb
-Size: 4690
-MD5sum: c88ed5d226828e9c7b512ecb896b4b04
-SHA1: dbc5796a824f4e4708fdc7441ad7126173b93b9a
-SHA256: 15dace3a3842263ee393c5a5b010c6bc8245d8acc0eb84c13df77de2f72256d7
+Filename: debs/com.massimilianofurlan.popuponstart_0.0.1-3_iphoneos-arm.deb
+Size: 5498
+MD5sum: 07d2d49ef76cfdd2055ae8fa958b3ca2
+SHA1: 12279119d24e5c77e1cb62bd10f21c3882165884
+SHA256: b0b74c94122eb6271bba414133cab0968569bf8ccddfc22822e6a38ca2dba927
 Section: Tweaks
 Description: An awesome MobileSubstrate tweak!
 Author: Massimiliano Furlan
