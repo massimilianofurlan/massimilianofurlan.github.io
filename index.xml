@@ -16,7 +16,7 @@
 GitHub: https://github.com/massimilianofurlangit
 About Me I am student.
 Research Interest I like infinitely repeated games.
-Equations $$ v_\pi(s_t) = \max_{a_t \in A(s_t)} \! \big\{ E_F\! \left[r_{t} &amp;#43; \delta v_\pi \! \left(s_{t&amp;#43;1}\right)| s_t,a_t\right] \big\}, \quad r_t, s_{t&amp;#43;1} \sim F(r_t,s_{t&amp;#43;1}| s_t,a_t)$$ Publications None.</description>
+Nice Equations $$ v_\pi(s_t) = \max_{a_t \in A(s_t)} \! \big\{ E_F\! \left[r_{t} &amp;#43; \delta v_\pi \! \left(s_{t&amp;#43;1}\right)| s_t,a_t\right] \big\}, \quad r_t, s_{t&amp;#43;1} \sim F(r_t,s_{t&amp;#43;1}| s_t,a_t)$$ Publications None.</description>
     </item>
     
   </channel>
