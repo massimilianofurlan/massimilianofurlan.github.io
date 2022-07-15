@@ -6,33 +6,5 @@
     <description>Recent content in Massimiliano on Massimiliano Furlan </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="//massimilianofurlan.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Bookmarks</title>
-      <link>//massimilianofurlan.github.io/bookmarks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//massimilianofurlan.github.io/bookmarks/</guid>
-      <description>Cool apps LaTeX editor: TeXShop
-Reference manager: BibDesk
-Messaging app: Signal
-Two-Factor authentication: Tofu
-Window manager: Rectangle
-OCR to LaTeX Mathpix
-Cool websites </description>
-    </item>
-    
-    <item>
-      <title>Massimiliano</title>
-      <link>//massimilianofurlan.github.io/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//massimilianofurlan.github.io/</guid>
-      <description>Email: massimiliano.furlan[at]studio.unibo.it
-GitHub: https://github.com/massimilianofurlangit
-About Me I am student.
-Research Interest I like infinitely repeated games.
-Nice Equations $$ v_\pi(s_t) = \max_{a_t \in A(s_t)} \! \big\{ E_F\! \left[r_{t} &amp;#43; \delta v_\pi \! \left(s_{t&amp;#43;1}\right)| s_t,a_t\right] \big\}, \quad r_t, s_{t&amp;#43;1} \sim F(r_t,s_{t&amp;#43;1}| s_t,a_t)$$ Publications None.</description>
-    </item>
-    
   </channel>
 </rss>
