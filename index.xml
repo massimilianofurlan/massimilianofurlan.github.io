@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Massimiliano Furlan</title>
-    <link>//massimilianofurlan.github.io/</link>
+    <link>https://massimilianofurlan.github.io/</link>
     <description>Recent content on Massimiliano Furlan</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//massimilianofurlan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://massimilianofurlan.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bookmarks</title>
-      <link>//massimilianofurlan.github.io/bookmarks/</link>
+      <link>https://massimilianofurlan.github.io/bookmarks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//massimilianofurlan.github.io/bookmarks/</guid>
+      <guid>https://massimilianofurlan.github.io/bookmarks/</guid>
       <description>WWW Opinion blog (Italian): Wittgenstein
 Best Italian newspaper: ilPost
 Gilbert Strang - Linear Algebra [link]
