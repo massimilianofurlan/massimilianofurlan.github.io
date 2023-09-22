@@ -8,6 +8,22 @@
     <language>en-us</language><atom:link href="https://massimilianofurlan.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bookmarks</title>
+      <link>https://massimilianofurlan.github.io/bookmarks-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://massimilianofurlan.github.io/bookmarks-2/</guid>
+      <description>Opinion blog (Italian): Wittgenstein
+Best Italian newspaper: ilPost
+Gilbert Strang - Linear Algebra [link]
+LaTeX editor: TeXShop
+Reference manager: BibDesk
+Messaging app: Signal
+Window manager: Rectangle
+OCR to LaTeX: Mathpix</description>
+    </item>
+    
+    <item>
+      <title>Bookmarks</title>
       <link>https://massimilianofurlan.github.io/bookmarks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -20,6 +36,20 @@ Reference manager: BibDesk
 Messaging app: Signal
 Window manager: Rectangle
 OCR to LaTeX: Mathpix</description>
+    </item>
+    
+    <item>
+      <title>Massimiliano Furlan</title>
+      <link>https://massimilianofurlan.github.io/_index-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://massimilianofurlan.github.io/_index-2/</guid>
+      <description>Email: massimiliano[dot]furlan[at]warwick.ac.uk
+GitHub: https://github.com/massimilianofurlan
+About Me MRes in Economics at the University of Warwick
+Research Interest Game theory and learning algorithms
+%## A Nice Equation
+% $$ %$$ %	v_\pi(s_t) = \max_{a_t \in A(s_t)} \! \big\{ E_F\! \left[r_{t} &amp;#43; \delta v_\pi \! \left(s_{t&amp;#43;1}\right)| s_t,a_t\right] \big\}, \quad r_t, s_{t&amp;#43;1} \sim F(r_t,s_{t&amp;#43;1}| s_t,a_t) %$$ %$$ </description>
     </item>
     
   </channel>
