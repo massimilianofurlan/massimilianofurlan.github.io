@@ -43,7 +43,7 @@ a:hover {
     width: 225px; /* set image width */
     height: auto; /* maintain aspect ratio */
     min-height: 100%; /* ensure image takes at least the height of the text */
-    object-fit: cover; /* cover ensures the image maintains aspect ratio and covers the area */
+    object-fit: contain; /* ensure the entire image is visible while maintaining aspect ratio */
 }
 
 .profile-content {
