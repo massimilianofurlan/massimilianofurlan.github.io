@@ -34,10 +34,20 @@ a:hover {
 
 /* Profile layout */
 .profile-container {
-    display: grid; 
-    grid-template-columns: auto 1fr; /* image takes space, text grows to fill */
+    display: flex; /* use flexbox layout for profile */
     gap: 20px; /* space between image and text */
-    align-items: center; /* align items in the center */
+    align-items: stretch; /* ensure items stretch to fill the container */
+}
+
+.profile-image {
+    width: 225px; /* set image width */
+    height: auto; /* maintain aspect ratio */
+    min-height: 100%; /* ensure image takes at least the height of the text */
+    object-fit: cover; /* cover ensures the image maintains aspect ratio and covers the area */
+}
+
+.profile-content {
+    flex: 1; /* allow content to grow to fill available space */
 }
 
 .contact-info {
@@ -60,16 +70,11 @@ a:hover {
     text-align: center; /* center text in footer */
 }
 
-/* Profile image layout */
-.profile-image {
-    width: 225px; /* set image width */
-    height: auto; /* maintain aspect ratio */
-}
-
 /* Layout for narrow screens */
 @media (max-width: 650px) { 
     .profile-container {
-        grid-template-columns: 1fr; /* stack image and text vertically on narrow screens */
+        flex-direction: column; /* stack image and text vertically on narrow screens */
+        align-items: left; /* align items to the left */
     }
 
     .profile-image {
