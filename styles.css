@@ -36,8 +36,8 @@ a:hover {
 .profile-container {
     display: flex; /* use flexbox layout for profile */
     gap: 20px; /* space between image and text */
-    /* align-items: stretch; /* ensure items stretch to fill the container */
-    align-items: center; /* center items on container */
+    align-items: stretch; /* ensure items stretch to fill the container */
+    /*align-items: center; /* center items on container */
 }
 
 .profile-image {
