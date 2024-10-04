@@ -5,7 +5,7 @@
 
 body {
     font-family: Arial, sans-serif; /* set the font style for the entire document */
-    line-height: 1.5; /* define line height */
+    line-height: 1.4; /* define line height */
     margin: 0; /* remove default margin */
     padding: 20px; /* add padding around the content */
     background-color: #f9f9f9; /* set background color */
@@ -36,7 +36,8 @@ a:hover {
 .profile-container {
     display: flex; /* use flexbox layout for profile */
     gap: 20px; /* space between image and text */
-    align-items: stretch; /* ensure items stretch to fill the container */
+    /* align-items: stretch; /* ensure items stretch to fill the container */
+    align-items: center; /* center items on container */
 }
 
 .profile-image {
@@ -58,8 +59,8 @@ a:hover {
     margin-bottom: 20px; /* space below papers section */
 }
 
-.papers-section p {
-    margin: 5px 0; /* space between each paper */
+p {
+    margin: 7px 0; /* space between each paper */
 }
 
 /* Footer styles */
