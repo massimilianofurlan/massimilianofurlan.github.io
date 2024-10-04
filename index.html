@@ -8,38 +8,48 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <!-- Header section -->
-    <header class="section">
-        <h1>Massimiliano Furlan</h1>
+    <!-- global header section -->
+    <header class="header-section">
+        <h1 class="header-title">Massimiliano Furlan</h1>
     </header>
 
-    <!-- Main content section -->
-    <main>
-        <section class="section profile-container">
-            <div class="profile-content">
+    <!-- main content section -->
+    <main class="main-content">
+        <!-- profile information section -->
+        <section class="profile-section">
+            <div class="profile-container">
                 <img src="me.jpg" alt="Me in Croatia, August 2022" class="profile-image">
-                <div>
+                <div class="personal-info">
                     <p>I am a PhD student in Economics at the University of Warwick.</p>
                     <p>I am interested in game theory and, in particular, on topics related to learning and bounded rationality.</p>
                     <p>You can find my curriculum <a href="resume.pdf" target="_blank" rel="noopener noreferrer">here</a>.</p>
                     <div class="contact-info">
-                        <p>Email: <span id="email">[loading email...]</span></p>
-                        <p>GitHub: <a href="https://github.com/massimilianofurlan" target="_blank">github.com/massimilianofurlan</a></p>
+                        <p style="white-space: nowrap;">Email: <span id="email">[loading email...]</span></p>
+                        <p style="white-space: nowrap;">GitHub: <a href="https://github.com/massimilianofurlan" target="_blank">github.com/massimilianofurlan</a></p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="work">
-            <h3>Working Papers</h3>
-            <p>Deep Learning to Play Games (with Daniele Condorelli) <a href="https://arxiv.org/pdf/2409.15197" target="_blank">[pdf]</a> <a href="https://github.com/massimilianofurlan/nn_bimatrix_games" target="_blank">[code]</a></p>
-            <p>Cheap Talking Algorithms (with Daniele Condorelli) <a href="https://arxiv.org/pdf/2310.07867" target="_blank">[pdf]</a> <a href="https://github.com/massimilianofurlan/rl_cheap_talk" target="_blank">[code]</a></p>
+        <!-- papers section -->
+        <section class="papers-section" id="work">
+            <h3 class="papers-title">Working Papers</h3>
+            <p>
+                Deep Learning to Play Games (with Daniele Condorelli) 
+                <a href="https://arxiv.org/pdf/2409.15197" target="_blank">[pdf]</a> 
+                <a href="https://github.com/massimilianofurlan/nn_bimatrix_games" target="_blank">[code]</a>
+            </p>
+            <p>
+                Cheap Talking Algorithms (with Daniele Condorelli) 
+                <a href="https://arxiv.org/pdf/2310.07867" target="_blank">[pdf]</a> 
+                <a href="https://github.com/massimilianofurlan/rl_cheap_talk" target="_blank">[code]</a>
+            </p>
         </section>
     </main>
 
-    <!-- Footer section -->
-    <footer class="section">
-        <p>© 2024 Massimiliano Furlan</p>
+    <!-- footer section -->
+    <footer class="footer-section">
+        <p class="footer-text">© 2024 Massimiliano Furlan</p>
     </footer>
 
     <script src="script.js"></script>

@@ -1,24 +1,26 @@
+/* Global styles */
+* {
+    box-sizing: border-box; /* include padding and border in element's total width and height */
+}
+
 body {
     font-family: Arial, sans-serif; /* set the font style for the entire document */
-    line-height: 1.0; /* define line height */
+    line-height: 1.5; /* define line height */
     margin: 0; /* remove default margin */
     padding: 20px; /* add padding around the content */
     background-color: #f9f9f9; /* set background color */
     color: #333; /* set text color */
+    min-width: 375px; /* set minimum width to accommodate the email */
 }
 
-h1, h2, h3 {
-    margin: 0; /* remove margin for headings */
-    margin-top: -10px; /* reduce space after h3 for tighter layout */
-    margin-bottom: -10px; /* reduce space after h3 for tighter layout */
+h1 {
+    margin: 0 0 0; /* adjust space for headings */
     padding: 10px 0; /* add vertical padding for spacing */
 }
 
-footer {
-    margin-top: auto;
-    padding: 10px 0;
-    color: #888;
-    text-align: center;
+h2, h3 {
+    margin: 10px 0 -10px; /* adjust space for headings */
+    padding: 10px 0; /* add vertical padding for spacing */
 }
 
 a {
@@ -27,45 +29,51 @@ a {
 }
 
 a:hover {
-    text-decoration: underline; /* underline links on hover for clarity */
+    text-decoration: underline; /* underline links on hover */
 }
 
-.section {
-    margin-bottom: 20px; /* space between sections */
+/* Profile layout */
+.profile-container {
+    display: grid; 
+    grid-template-columns: auto 1fr; /* image takes space, text grows to fill */
+    gap: 20px; /* space between image and text */
+    align-items: center; /* align items in the center */
 }
 
 .contact-info {
-    margin-top: 30px; /* space above contact information */
+    margin-top: 25px; /* space above contact information */
 }
 
-/* Profile container layout*/
-.profile-container {
-    display: flex;
-    flex-direction: column;
+.papers-section {
+    margin-bottom: 20px; /* space below papers section */
 }
 
-.profile-content {
-    display: grid;
-    grid-template-columns: auto 1fr; /* image takes space, text grows to fill */
-    gap: 20px; /* space between image and text */
-    align-items: center; /* align the text to the center of the image */
+.papers-section p {
+    margin: 5px 0; /* space between each paper */
 }
 
+/* Footer styles */
+.footer-section {
+    margin-top: auto; /* space above footer */
+    padding: 10px 0; /* padding for footer */
+    color: #888; /* text color for footer */
+    text-align: center; /* center text in footer */
+}
+
+/* Profile image layout */
 .profile-image {
-    width: 200px;
-    height: auto;
-    flex-shrink: 0; /* orevent image from shrinking */
+    width: 225px; /* set image width */
+    height: auto; /* maintain aspect ratio */
 }
 
 /* Layout for narrow screens */
-@media (max-width: 600px) { 
-    .profile-content {
-        grid-template-columns: 1fr; /* stack image and text vertically */
+@media (max-width: 650px) { 
+    .profile-container {
+        grid-template-columns: 1fr; /* stack image and text vertically on narrow screens */
     }
 
     .profile-image {
-        max-width: 400px; /* maximum image width (on narrow screens) */
-        width: 95%; /* image width relative to container */
-        height: auto; /* maintain aspect ratio */
+        max-width: 335px; /* maximum image width (on narrow screens) */
+        width: 100%; /* image width relative to container */
     }
 }
