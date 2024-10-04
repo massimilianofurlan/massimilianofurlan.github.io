@@ -14,6 +14,13 @@ h1, h2, h3 {
     padding: 10px 0; /* add vertical padding for spacing */
 }
 
+footer {
+    margin-top: auto;
+    padding: 10px 0;
+    color: #888;
+    text-align: center;
+}
+
 a {
     color: #cb4434; /* set link color */
     text-decoration: none; /* remove underline from links */
