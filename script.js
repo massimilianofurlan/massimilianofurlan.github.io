@@ -1,11 +1,11 @@
 // Function to create the mailto link using hex encoding
 function showEmail() {
     // Hex encoded components of the email
-    var firstName = "6d617373696d696c69616e6f"; // massimiliano
-    var lastName = "6675726c616e"; // furlan
-    var domain = "7761727769636b"; // warwick
-    var tld = "6163"; // ac
-    var tldFull = "756b"; // uk
+    var firstName = "6d617373696d696c69616e6f";
+    var lastName = "6675726c616e";
+    var domain = "7761727769636b";
+    var tld = "6163";
+    var tldFull = "756b";
 
     // Construct the displayed email using [dot] and [at]
     var displayedEmail = hexToString(firstName) + "." + hexToString(lastName) + "[at]" + hexToString(domain) + "[dot]" + hexToString(tld) + "." + hexToString(tldFull);
