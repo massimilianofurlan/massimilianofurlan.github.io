@@ -17,6 +17,16 @@ h1, h2 {
     margin-top: 0; /* remove top margin */
 }
 
+h1 {
+    font-size: 28px;
+    margin: 0.3em 0 0.5em 0;
+}
+
+h2 {
+    font-size: 22px;
+    margin: 1em 0 0.5em 0;
+}
+
 a {
     color: #0000EE; /* set global link color */
     text-decoration: none; /* remove underline */
@@ -48,6 +58,7 @@ p.footer-text {
 }
 
 .intro img {
+    width: 40%; /* scale relative to content width */
     max-width: 180px; /* limit image width */
     height: auto; /* maintain aspect ratio */
     border: 1px solid #000; /* black border around image */
@@ -78,9 +89,7 @@ ol.papers li {
 
 /* navigation bar styles */
 #navbar {
-    font-family: Georgia, "Times New Roman", serif;
-    /*font-family: monospace;*/
-    margin-bottom: 10px; /* space below navbar */
+    font-family: Georgia, "Times New Roman", serif; /*font-family: monospace;*/
 }
 
 #navbar a {
