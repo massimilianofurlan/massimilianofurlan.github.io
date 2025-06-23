@@ -3,6 +3,7 @@ body {
     background-color: #ffffff; /* set background to white */
     color: #000000; /* set text color to black */
     font-family: "Georgia", "Times New Roman", serif; /* serif font */
+    font-size: 1em; /* base size: 16px */
     min-width: 500px; /* minimum readable width */
     max-width: 700px; /* limit line width for readability */
     margin: 40px auto; /* center body horizontally with top/bottom spacing */
@@ -83,11 +84,11 @@ ol.papers li {
 }
 
 .paper-title {
-    font-size: 17px;
+    font-size: 1.1em;
 }
 
 .coauthors {
-    font-size: 15px;
+    font-size: 0.9em;
 }
 
 /* navigation bar styles */
