@@ -5,58 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Massimiliano Furlan</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
 </head>
 <body>
-    <!-- global header section -->
-    <header class="header-section">
-        <h1 class="header-title">Massimiliano Furlan</h1>
-    </header>
+
+    <!-- navigation bar section -->
+    <nav id="navbar">
+        [<a href="#home">Home</a>]
+        [<a href="#research">Research</a>]
+        [<a href="#contact">Contact</a>]
+    </nav>
 
     <!-- main content section -->
-    <main class="main-content">
-        <!-- profile information section -->
-        <section class="profile-section">
-            <div class="profile-container">
-                <img src="me.jpg" alt="Me in Croatia, August 2022" class="profile-image">
-                <div class="personal-info">
-                    <p>I am a PhD student in Economics at the University of Warwick.</p>
-                    <p>I am interested in game theory and, in particular, on topics related to learning and bounded rationality.</p>
-                    <p>You can find my curriculum <a href="resume.pdf" target="_blank" rel="noopener noreferrer">here</a>.</p>
-                    <div class="contact-info">
-                        <p style="white-space: nowrap;">Email: <span id="email">[loading email...]</span></p>
-                        <p style="white-space: nowrap;">GitHub: <a href="https://github.com/massimilianofurlan" target="_blank">github.com/massimilianofurlan</a></p>
-                    </div>
+    <main>
+
+        <!-- header section -->
+        <header>
+            <h1 id="home">Massimiliano Furlan</h1>
+        </header>
+
+        <!-- profile introduction section -->
+        <section id="intro">
+            <div class="intro">
+                <img src="me.jpg" alt="Portrait of Massimiliano Furlan">
+                <div class="intro-text">
+                    <p>
+                        I am a PhD student in Economics at the University of Warwick.
+                    </p>
+                    <p>
+                        I work at the intersection of economics and computer science, with a focus on game theory. 
+                    </p>
+                    <p>
+                        I am interested in learning in games, bounded rationality and information design. 
+                    </p>
+                    <p>
+                        You can find my curriculum <a href="resume.pdf" target="_blank" rel="noopener noreferrer" type="application/pdf">here</a>.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- papers section -->
-        <section class="papers-section" id="work">
-            <h3 class="papers-title">Working Papers</h3>
-            <p>
-                Perfect Secrecy in the Wild: A Characterization  (with <a href="https://warwick.ac.uk/fac/soc/economics/staff/ccavounidis" target="_blank">Costas Cavounidis</a> and <a href="https://www.alkisgeorgiadis-harris.com" target="_blank">Alkis Georgiadis-Harris</a>) 
-                <a href="https://arxiv.org/pdf/2506.12416" target="_blank">[pdf]</a> 
-            </p>
-            <p>
-                Deep Learning Across Games (with <a href="https://www.condorelli.science" target="_blank">Daniele Condorelli</a>)
-                <a href="https://arxiv.org/pdf/2409.15197" target="_blank">[pdf]</a> 
-                <a href="https://github.com/massimilianofurlan/nn_bimatrix_games" target="_blank">[code]</a>
-                <a href="https://lime-squid.lnx.warwick.ac.uk/" target="_blank">[web-resource]</a>
-            </p>
-            <p>
-                Cheap Talking Algorithms (with <a href="https://www.condorelli.science" target="_blank">Daniele Condorelli</a>)
-                <a href="https://arxiv.org/pdf/2310.07867" target="_blank">[pdf]</a> 
-                <a href="https://github.com/massimilianofurlan/rl_cheap_talk" target="_blank">[code]</a>
-            </p>
+        <!-- working papers section -->
+        <section id="research">
+            <h2>Working Papers</h2>
+            <ol class="papers">
+                <li>
+                    <div class="paper-entry">
+                        <span class="paper-title">Perfect Secrecy in the Wild: A Characterization</span>
+                        <span class="paper-links">
+                            <a href="https://arxiv.org/pdf/2506.12416" target="_blank">[pdf]</a>
+                        </span>
+                    </div>
+                    <div class="coauthors">
+                        with <a href="https://warwick.ac.uk/fac/soc/economics/staff/ccavounidis" target="_blank">Costas Cavounidis</a> and
+                        <a href="https://www.alkisgeorgiadis-harris.com" target="_blank">Alkis Georgiadis-Harris</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="paper-entry">
+                        <span class="paper-title">Deep Learning Across Games</span>
+                        <span class="paper-links">
+                            <a href="https://arxiv.org/pdf/2409.15197" target="_blank">[pdf]</a>
+                            <a href="https://github.com/massimilianofurlan/nn_bimatrix_games" target="_blank">[code]</a>
+                            <a href="https://lime-squid.lnx.warwick.ac.uk/" target="_blank">[web]</a>
+                        </span>
+                    </div>
+                    <div class="coauthors">
+                        with <a href="https://www.condorelli.science" target="_blank">Daniele Condorelli</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="paper-entry">
+                        <span class="paper-title">Cheap Talking Algorithms</span>
+                        <span class="paper-links">
+                            <a href="https://arxiv.org/pdf/2310.07867" target="_blank">[pdf]</a>
+                            <a href="https://github.com/massimilianofurlan/rl_cheap_talk" target="_blank">[code]</a>
+                        </span>
+                    </div>
+                    <div class="coauthors">
+                        with <a href="https://www.condorelli.science" target="_blank">Daniele Condorelli</a>
+                    </div>
+                </li>
+            </ol>
         </section>
+
+        <!-- contact section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: 
+                <a href="#" onclick="this.href='mailto:' + 'massimiliano.furlan' + '@' + 'warwick.ac.uk'">
+                    massimiliano.furlan [at] warwick [dot] ac [dot] uk
+                </a>
+            </p>
+            <p>GitHub: <a href="https://github.com/massimilianofurlan" target="_blank">github.com/massimilianofurlan</a></p>
+            <p>Department of Economics, University of Warwick</p>
+        </section>
+
     </main>
 
     <!-- footer section -->
-    <footer class="footer-section">
-        <p class="footer-text">© 2024 Massimiliano Furlan</p>
+    <footer>
+        <hr>
+        <p class="footer-text">© 2025 Massimiliano Furlan</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>

@@ -1,85 +1,93 @@
-/* Global styles */
-* {
-    box-sizing: border-box; /* include padding and border in element's total width and height */
-}
-
+/* global layout */
 body {
-    font-family: Arial, sans-serif; /* set the font style for the entire document */
-    line-height: 1.4; /* define line height */
-    margin: 0; /* remove default margin */
-    padding: 20px; /* add padding around the content */
-    background-color: #f9f9f9; /* set background color */
-    color: #333; /* set text color */
-    min-width: 375px; /* set minimum width to accommodate the email */
+    background-color: #ffffff; /* set background to white */
+    color: #000000; /* set text color to black */
+    font-family: "Georgia", "Times New Roman", serif; /* serif font */
+    /*font-family: monospace; */
+    min-width: 700px; /* limit line width for readability */
+    max-width: 700px; /* limit line width for readability */
+    margin: 40px auto; /* center body horizontally with top/bottom spacing */
+    padding: 0 20px; /* add horizontal padding */
 }
 
-h1 {
-    margin: 0 0 0; /* adjust space for headings */
-    padding: 10px 0; /* add vertical padding for spacing */
-}
-
-h2, h3 {
-    margin: 10px 0 -10px; /* adjust space for headings */
-    padding: 10px 0; /* add vertical padding for spacing */
+/* headings and text */
+h1, h2 {
+    border-bottom: 1px solid #000; /* underline headers */
+    padding-bottom: 2px; /* space below header text */
+    margin-top: 0; /* remove top margin */
 }
 
 a {
-    color: #cb4434; /* set link color */
-    text-decoration: none; /* remove underline from links */
+    color: #0000EE; /* set global link color */
+    text-decoration: none; /* remove underline */
 }
 
 a:hover {
-    text-decoration: underline; /* underline links on hover */
+    text-decoration: underline; /* underline on hover */
 }
 
-/* Profile layout */
-.profile-container {
-    display: flex; /* use flexbox layout for profile */
-    gap: 20px; /* space between image and text */
-    /* align-items: stretch; /* ensure items stretch to fill the container */
-    align-items: center; /* center items on container */
+ul {
+    padding-left: 20px; /* indent bullet lists */
 }
 
-.profile-image {
-    width: 225px; /* set image width */
+hr {
+    margin: 30px 0; /* vertical spacing around horizontal rule */
+}
+
+p.footer-text {
+    font-size: small; /* smaller footer text */
+}
+
+/* profile intro layout */
+.intro {
+    display: flex; /* use flexbox layout */
+    align-items: flex-start; /* align image and text at top */
+    gap: 20px; /* horizontal spacing between image and text */
+    flex-wrap: wrap; /* allow wrapping on narrow screens */
+    margin-bottom: 20px; /* spacing below intro block */
+}
+
+.intro img {
+    max-width: 180px; /* limit image width */
     height: auto; /* maintain aspect ratio */
-    min-height: 100%; /* ensure image takes at least the height of the text */
-    object-fit: contain; /* ensure the entire image is visible while maintaining aspect ratio */
+    border: 1px solid #000; /* black border around image */
 }
 
-.profile-content {
-    flex: 1; /* allow content to grow to fill available space */
+.intro-text {
+    flex: 1; /* take up remaining space */
+    min-width: 200px; /* avoid overly narrow blocks */
 }
 
-.contact-info {
-    margin-top: 25px; /* space above contact information */
+/* papers list */
+ol.papers {
+    padding-left: 1.5em; /* indent numbered list */
 }
 
-.papers-section {
-    margin-bottom: 20px; /* space below papers section */
+ol.papers li {
+    margin-bottom: 1em; /* spacing between paper entries */
 }
 
-p {
-    margin: 7px 0; /* space between each paper */
+.paper-entry {
+    display: flex; /* horizontal layout */
+    justify-content: space-between; /* title left, links right */
 }
 
-/* Footer styles */
-.footer-section {
-    margin-top: auto; /* space above footer */
-    padding: 10px 0; /* padding for footer */
-    color: #888; /* text color for footer */
-    text-align: center; /* center text in footer */
+.paper-title {
+    font-weight: bold; /* emphasize paper title */
 }
 
-/* Layout for narrow screens */
-@media (max-width: 650px) { 
-    .profile-container {
-        flex-direction: column; /* stack image and text vertically on narrow screens */
-        align-items: left; /* align items to the left */
-    }
+/* navigation bar styles */
+#navbar {
+    font-family: Georgia, "Times New Roman", serif;
+    /*font-family: monospace;*/
+    margin-bottom: 10px; /* space below navbar */
+}
 
-    .profile-image {
-        max-width: 335px; /* maximum image width (on narrow screens) */
-        width: 100%; /* image width relative to container */
-    }
+#navbar a {
+    text-decoration: none; /* remove underline from links */
+    color: #0000EE; /* standard link blue */
+}
+
+#navbar a:hover {
+    text-decoration: underline; /* underline links on hover */
 }
