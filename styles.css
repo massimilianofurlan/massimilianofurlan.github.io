@@ -3,8 +3,7 @@ body {
     background-color: #ffffff; /* set background to white */
     color: #000000; /* set text color to black */
     font-family: "Georgia", "Times New Roman", serif; /* serif font */
-    /*font-family: monospace; */
-    min-width: 700px; /* limit line width for readability */
+    min-width: 500px; /* minimum readable width */
     max-width: 700px; /* limit line width for readability */
     margin: 40px auto; /* center body horizontally with top/bottom spacing */
     padding: 0 20px; /* add horizontal padding */
@@ -18,12 +17,12 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 28px;
+    font-size: 26px;
     margin: 0.3em 0 0.5em 0;
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 20px;
     margin: 1em 0 0.5em 0;
 }
 
@@ -51,15 +50,14 @@ p.footer-text {
 /* profile intro layout */
 .intro {
     display: flex; /* use flexbox layout */
-    align-items: flex-start; /* align image and text at top */
+    align-items: center; /* center items on container */
     gap: 20px; /* horizontal spacing between image and text */
     flex-wrap: wrap; /* allow wrapping on narrow screens */
     margin-bottom: 20px; /* spacing below intro block */
 }
 
 .intro img {
-    width: 40%; /* scale relative to content width */
-    max-width: 180px; /* limit image width */
+    max-width: 200px; /* limit image width */
     height: auto; /* maintain aspect ratio */
     border: 1px solid #000; /* black border around image */
     flex-shrink: 0;
@@ -85,20 +83,20 @@ ol.papers li {
 }
 
 .paper-title {
-    font-size: 18px;
-    font-weight: 600; /* emphasize paper title */
+    font-size: 17px;
+}
+
+.coauthors {
+    font-size: 15px;
 }
 
 /* navigation bar styles */
 #navbar {
-    font-family: Georgia, "Times New Roman", serif; /*font-family: monospace;*/
+    font-family: "Georgia", "Times New Roman", serif; /* consistent with body */
+    display: flex; /* enable left/right alignment */
+    flex-wrap: wrap; /* allow wrapping on small screens */
 }
 
-#navbar a {
-    text-decoration: none; /* remove underline from links */
-    color: #0000EE; /* standard link blue */
-}
-
-#navbar a:hover {
-    text-decoration: underline; /* underline links on hover */
+.nav-item {
+    margin-right: 5px; /* spacing between navbar items */
 }
