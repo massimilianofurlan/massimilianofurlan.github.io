@@ -4,26 +4,26 @@ body {
     color: #000000; /* set text color to black */
     font-family: "Georgia", "Times New Roman", serif; /* serif font */
     font-size: 1em; /* base size: 16px */
-    min-width: 500px; /* minimum readable width */
-    max-width: 700px; /* limit line width for readability */
-    margin: 40px auto; /* center body horizontally with top/bottom spacing */
-    padding: 0 20px; /* add horizontal padding */
+    min-width: 31.25em; /* minimum readable width (500px) */
+    max-width: 43.75em; /* limit line width for readability (700px) */
+    margin: 2.5em auto; /* center body horizontally with top/bottom spacing */
+    padding: 0 1.25em; /* add horizontal padding */
 }
 
 /* headings and text */
 h1, h2 {
-    border-bottom: 1px solid #000; /* underline headers */
-    padding-bottom: 2px; /* space below header text */
+    border-bottom: 0.0625em solid #000; /* underline headers */
+    padding-bottom: 0.125em; /* space below header text */
     margin-top: 0; /* remove top margin */
 }
 
 h1 {
-    font-size: 26px;
+    font-size: 1.625em; /* ~26px */
     margin: 0.3em 0 0.5em 0;
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 1.25em; /* ~20px */
     margin: 1em 0 0.5em 0;
 }
 
@@ -37,36 +37,36 @@ a:hover {
 }
 
 ul {
-    padding-left: 20px; /* indent bullet lists */
+    padding-left: 1.25em; /* indent bullet lists */
 }
 
 hr {
-    margin: 30px 0; /* vertical spacing around horizontal rule */
+    margin: 1.875em 0; /* vertical spacing around horizontal rule */
 }
 
 p.footer-text {
-    font-size: small; /* smaller footer text */
+    font-size: 0.8em; /* smaller footer text */
 }
 
 /* profile intro layout */
 .intro {
     display: flex; /* use flexbox layout */
     align-items: center; /* center items on container */
-    gap: 20px; /* horizontal spacing between image and text */
+    gap: 1.25em; /* horizontal spacing between image and text */
     flex-wrap: wrap; /* allow wrapping on narrow screens */
-    margin-bottom: 20px; /* spacing below intro block */
+    margin-bottom: 1.25em; /* spacing below intro block */
 }
 
 .intro img {
-    max-width: 200px; /* limit image width */
+    max-width: 12.5em; /* limit image width (200px) */
     height: auto; /* maintain aspect ratio */
-    border: 1px solid #000; /* black border around image */
+    border: 0.0625em solid #000; /* black border around image */
     flex-shrink: 0;
 }
 
 .intro-text {
     flex: 1; /* take up remaining space */
-    min-width: 200px; /* avoid overly narrow blocks */
+    min-width: 12.5em; /* avoid overly narrow blocks (200px) */
 }
 
 /* papers list */
@@ -99,5 +99,5 @@ ol.papers li {
 }
 
 .nav-item {
-    margin-right: 5px; /* spacing between navbar items */
+    margin-right: 0.3125em; /* spacing between navbar items (5px) */
 }
