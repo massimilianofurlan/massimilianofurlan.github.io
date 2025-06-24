@@ -1,18 +1,26 @@
+/* prevent font scaling issues on iOS Safari */
+html {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
 /* global layout */
 body {
     background-color: #ffffff; /* set background to white */
     color: #000000; /* set text color to black */
     font-family: "Georgia", "Times New Roman", serif; /* serif font */
     font-size: 1em; /* base size: 16px */
-    min-width: 31.25em; /* minimum readable width (500px) */
-    max-width: 43.75em; /* limit line width for readability (700px) */
-    margin: 2.5em auto; /* center body horizontally with top/bottom spacing */
+    min-width: 500px; /* minimum readable width */
+    max-width: 700px; /* limit line width for readability */
+    margin: 2.5em auto; /* center body horizontally with vertical spacing */
     padding: 0 1.25em; /* add horizontal padding */
 }
 
 /* headings and text */
 h1, h2 {
-    border-bottom: 0.0625em solid #000; /* underline headers */
+    border-bottom: 1px solid #000; /* underline headers */
     padding-bottom: 0.125em; /* space below header text */
     margin-top: 0; /* remove top margin */
 }
@@ -58,15 +66,15 @@ p.footer-text {
 }
 
 .intro img {
-    max-width: 12.5em; /* limit image width (200px) */
+    max-width: 12.5em; /* limit image width (~200px) */
     height: auto; /* maintain aspect ratio */
-    border: 0.0625em solid #000; /* black border around image */
+    border: 1px solid #000; /* black border around image */
     flex-shrink: 0;
 }
 
 .intro-text {
     flex: 1; /* take up remaining space */
-    min-width: 12.5em; /* avoid overly narrow blocks (200px) */
+    min-width: 12.5em; /* avoid overly narrow blocks (~200px) */
 }
 
 /* papers list */
