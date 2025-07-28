@@ -8,106 +8,114 @@ html {
 
 /* global layout */
 body {
-    background-color: #ffffff; /* set background to white */
-    color: #000000; /* set text color to black */
-    font-family: "Georgia", "Times New Roman", serif; /* serif font */
-    font-size: 1em; /* base size: 16px */
-    min-width: 500px; /* minimum readable width */
-    max-width: 700px; /* limit line width for readability */
-    margin: 2.5em auto; /* center body horizontally with vertical spacing */
-    padding: 0 1.25em; /* add horizontal padding */
+    background-color: #fff;
+    color: #000;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1em;
+    min-width: 500px;
+    max-width: 700px;
+    margin: 2em auto;
+    padding: 0 1.25em;
 }
 
-/* headings and text */
+/* headings */
 h1, h2 {
-    border-bottom: 1px solid #000; /* underline headers */
-    padding-bottom: 0.125em; /* space below header text */
-    margin-top: 0; /* remove top margin */
+    font-size: 1.25em;
+    border-bottom: 1px solid #000;
+    padding-bottom: 0.1em;
+    margin: 1em 0 0.4em;
 }
 
 h1 {
-    font-size: 1.625em; /* ~26px */
-    margin: 0.3em 0 0.5em 0;
+    font-size: 1.625em;
 }
 
-h2 {
-    font-size: 1.25em; /* ~20px */
-    margin: 1em 0 0.5em 0;
-}
-
+/* links and text */
 a {
-    color: #0000EE; /* set global link color */
-    text-decoration: none; /* remove underline */
+    color: #00f;
+    text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline; /* underline on hover */
+    text-decoration: underline;
+}
+
+p {
+    margin: 0.4em 0;
 }
 
 ul {
-    padding-left: 1.25em; /* indent bullet lists */
+    padding-left: 1.25em;
+    margin: 0.4em 0;
 }
 
 hr {
-    margin: 1.875em 0; /* vertical spacing around horizontal rule */
+    margin: 1.2em 0;
 }
 
 p.footer-text {
-    font-size: 0.8em; /* smaller footer text */
+    font-size: 0.8em;
+    margin: 1em 0 0;
 }
 
-/* profile intro layout */
+/* intro section */
 .intro {
-    display: flex; /* use flexbox layout */
-    align-items: center; /* center items on container */
-    gap: 1.25em; /* horizontal spacing between image and text */
-    flex-wrap: wrap; /* allow wrapping on narrow screens */
-    margin-bottom: 1.25em; /* spacing below intro block */
+    display: flex;
+    align-items: center;
+    gap: 1.25em;
+    flex-wrap: wrap;
+    margin-bottom: 1.2em;
 }
 
 .intro img {
-    max-width: 12.5em; /* limit image width (~200px) */
-    height: auto; /* maintain aspect ratio */
-    border: 1px solid #000; /* black border around image */
+    max-width: 12em;
+    height: auto;
+    border: 1px solid #000;
     flex-shrink: 0;
 }
 
 .intro-text {
-    flex: 1; /* take up remaining space */
-    min-width: 12.5em; /* avoid overly narrow blocks (~200px) */
+    flex: 1;
+    min-width: 12.5em;
 }
 
-/* papers list */
+.intro-text p {
+    margin: 1em 0;
+}
+
+/* paper list */
 ul.papers {
-    list-style: none;       /* remove bullets */
-    padding-left: 0;        /* no indentation */
+    list-style: none;
+    padding: 0;
     margin: 0;
 }
 
 ul.papers li {
-    margin-bottom: 1em; /* spacing between paper entries */
+    margin: 0.5em 0;
 }
 
 .paper-entry {
-    display: flex; /* horizontal layout */
-    justify-content: space-between; /* title left, links right */
+    display: flex;
+    justify-content: space-between;
 }
 
-.paper-title {
-    font-size: 1.1em;
+.paper-title,
+.coauthors {
+    font-size: 1em;
 }
 
 .coauthors {
-    font-size: 0.9em;
+    margin-top: 0.2em;
 }
 
-/* navigation bar styles */
+/* navigation bar */
 #navbar {
-    font-family: "Georgia", "Times New Roman", serif; /* consistent with body */
-    display: flex; /* enable left/right alignment */
-    flex-wrap: wrap; /* allow wrapping on small screens */
+    font-family: Georgia, "Times New Roman", serif;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -1em;
 }
 
 .nav-item {
-    margin-right: 0.3125em; /* spacing between navbar items (5px) */
+    margin-right: 0.3125em;
 }
