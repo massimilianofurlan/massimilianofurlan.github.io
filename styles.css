@@ -78,11 +78,13 @@ p.footer-text {
 }
 
 /* papers list */
-ol.papers {
-    padding-left: 1.5em; /* indent numbered list */
+ul.papers {
+    list-style: none;       /* remove bullets */
+    padding-left: 0;        /* no indentation */
+    margin: 0;
 }
 
-ol.papers li {
+ul.papers li {
     margin-bottom: 1em; /* spacing between paper entries */
 }
 
