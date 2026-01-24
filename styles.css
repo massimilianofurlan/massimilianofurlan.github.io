@@ -108,6 +108,12 @@ ul.papers li {
     margin-top: 0.2em;
 }
 
+.journal {
+    font-size: 0.9em;
+    font-style: italic;
+    margin-top: 0.2em;
+}
+
 /* navigation bar */
 #navbar {
     font-family: Georgia, "Times New Roman", serif;
