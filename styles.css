@@ -125,3 +125,7 @@ ul.papers li {
 .nav-item {
     margin-right: 0.3125em;
 }
+
+#navbar a[aria-current="page"] {
+    text-decoration: underline;
+}
