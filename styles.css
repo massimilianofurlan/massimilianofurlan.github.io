@@ -58,31 +58,6 @@ p.footer-text {
     margin: 1em 0 0;
 }
 
-/* intro section */
-.intro {
-    display: flex;
-    align-items: center;
-    gap: 1.25em;
-    flex-wrap: wrap;
-    margin-bottom: 1.2em;
-}
-
-.intro img {
-    max-width: 12em;
-    height: auto;
-    border: 1px solid #000;
-    flex-shrink: 0;
-}
-
-.intro-text {
-    flex: 1;
-    min-width: 12.5em;
-}
-
-.intro-text p {
-    margin: 1em 0;
-}
-
 /* paper list */
 ul.papers {
     list-style: none;
@@ -99,11 +74,6 @@ ul.papers li {
     justify-content: space-between;
 }
 
-.paper-title,
-.coauthors {
-    font-size: 1em;
-}
-
 .coauthors {
     margin-top: 0.2em;
 }
@@ -116,7 +86,6 @@ ul.papers li {
 
 /* navigation bar */
 #navbar {
-    font-family: Georgia, "Times New Roman", serif;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: -1em;
@@ -126,6 +95,65 @@ ul.papers li {
     margin-right: 0.3125em;
 }
 
+.nav-item-right {
+    margin-left: auto;
+}
+
 #navbar a[aria-current="page"] {
     text-decoration: underline;
+}
+
+/* curriculum vitae */
+.cv-section {
+    margin-bottom: 0.5em;
+}
+
+.cv-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cv-table td {
+    vertical-align: top;
+    padding: 0.1em 0;
+}
+
+.cv-left {
+    width: 20%;
+    font-style: italic;
+    padding-right: 5em;
+}
+
+.cv-note {
+    font-style: italic;
+    font-size: small;
+    margin-top: 0.1em;
+}
+
+.eval {
+    float: right;
+    font-style: normal;
+}
+
+/* photo gallery */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.photo-block {
+    text-align: center;
+}
+
+.photo-block img {
+    max-width: 100%;
+    border: 1px solid #000;
+}
+
+.caption {
+    font-size: 0.9em;
+    margin-top: 0.3em;
+    color: #333;
 }
