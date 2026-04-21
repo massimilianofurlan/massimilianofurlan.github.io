@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=600, user-scalable=yes">
+    <title>Perfect Secrecy in the Wild: A Characterization / Massimiliano Furlan</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: {'[+]': [['$', '$']]}
+            }
+        };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <main class="tldr-main">
+        <header>
+            <h1>Perfect Secrecy in The Wild: A Characterization</h1>
+        </header>
+
+		<h2>Alice's problem</h2>
+
+		<p>
+	        Let $X$ and $Y$ be two random variables with finitely supported joint distribution on $\mathcal{X} \times \mathcal{Y}$.
+	    </p>
+		<p>
+	        Alice knows $X$ and $Y$, Bob knows $Y$, and Eve knows neither.<sup id="fnref1"><a href="#fn1">1</a></sup>
+	        The joint distribution of $X$ and $Y$ is common knowledge among the three.
+
+	    </p>
+	    <p>
+	        Alice would like to reveal $X$ to Bob, but wants Eve to learn nothing more about $X$ beyond what she already knows. 
+			The problem is that Alice can only speak publicly.
+	    </p>
+		<p>
+			Under what conditions on the joint distribution of $X$ and $Y$ can Alice reveal $X$ to Bob while revealing no information about $X$ to Eve? 
+	    </p>
+		
+		<h2>Perfect secrecy</h2>
+	    <p>
+	        The requirement that Eve must not learn anything about $X$ beyond what she already knows is called perfect secrecy, a term coined by Claude Shannon in 1947. 
+		</p>
+		<p>
+	        Denote Alice's public message by $Z$ and its message space by $\mathcal{Z}$. Formally, $Z$ satisfies perfect secrecy if Eve's posterior belief about $X$ after observing $Z$ equals her prior belief. That is, if
+	        \[
+	        	\forall (x, z) \in \mathcal{X} \times \mathcal{Z}, \quad\mathbb{P}( X = x \mid Z = z) = \mathbb{P}(X=x).
+	        \]
+			Equivalently, $Z$ satisfies perfect secrecy if $Z$ is statistically independent of $X$. 
+		</p>
+
+	    <h2>The one-time pad</h2>
+
+	    <p>
+	        A solution to Alice's problem is known in the special case where $Y$ is uniform and independent of $X$. In that case, Alice's problem is feasible if and only if $\# \mathcal{Y} \geq \# \mathcal{X}$ <a href="https://www.cs.virginia.edu/~evans/greatworks/shannon1949.pdf">(Shannon, 1949)</a>.
+	    </p>
+		<p>
+			Identify $\mathcal{X}$ with $\{0, 1, \ldots, n-1\}$ and $\mathcal{Y}$ with $\{0, 1, \ldots, m-1\}$. 
+			If Alice's problem is feasible; that is, if $m \geq n$, Alice sends the public message
+		        \[Z := X \oplus Y,\]
+		    where $\oplus$ denotes addition modulo $m$. Bob, knowing $Y$, can recover $X$ by computing
+		        \[Z \ominus Y = (X \oplus Y) \ominus Y = X,\]
+		    whereas Eve, who does not know $Y$, learns nothing about $X$
+			\[\begin{align*}
+				\forall (x, z) \in \mathcal{X} \times \mathcal{Z}, \quad
+	            \mathbb{P}(Z = z \mid X = x)
+	            &= \mathbb{P}(X \oplus Y = z \mid X = x) \\
+	            &= \mathbb{P}(x \oplus Y = z) \\
+	            &= \mathbb{P}(Y = z \ominus x) = 1/m,
+       		\end{align*}\]
+    	where the first equality is the definition of $Z$, the second uses independence of $X$ and $Y$, and the last uses uniformity of $Y$ on $\mathcal{Y}$. 
+		</p>
+	    
+		<p>
+	    	This construction is the <a href="https://en.wikipedia.org/wiki/One-time_pad">one-time pad</a>, introduced by <a href="https://patentimages.storage.googleapis.com/5d/ae/f5/1256151a84830e/US1310719.pdf">Vernam (1919)</a> and shown to be perfectly secret by Shannon in 1945.<sup id="fnref2"><a href="#fn2">2</a></sup>. The idea of the one-time pad is that Alice and Bob meet beforehand and design $Y$ to be uniform and independent of $X$, to later use it as a cryptographic key. 
+		</p>
+
+		<h2>A characterization</h2>
+
+		<p>
+		   Here we interpret $Y$ as exogenous, rather than as a design choice. What if $Y$ is not uniform and independent of $X$? When is Alice's problem feasible in general? 
+		</p>
+		<div class="theorem">
+		    <p><strong>Theorem 1.</strong> Alice's problem admits a solution if and only if</p>
+		    \[
+		        \forall y \in \mathcal{Y}, \quad \sum_{x \in \mathcal{X}} \mathbb{P}(Y = y \mid X = x) \leq 1.
+		        \tag{1}
+		    \]
+		</div>
+
+		<p>
+			Notice that if $Y$ is uniform and independent of $X$, the condition reduces to $\# \mathcal{Y} \geq \# \mathcal{X}$, recovering Shannon's condition.<sup id="fnref3"><a href="#fn3">3</a></sup> 
+			More generally, $\# \mathcal{Y} \geq \# \mathcal{X}$ remains necessary, but is no longer sufficient.
+		</p>
+
+		<p>
+			If you are interested, you can find the proof of Theorem 1 in <a href="https://arxiv.org/pdf/2506.12416" target="_blank" rel="noopener noreferrer">our paper</a>. Necessity is a simple disjointness argument. Sufficiency follows from the <a href="https://en.wikipedia.org/wiki/Doubly_stochastic_matrix#Birkhoff%E2%80%93von_Neumann_theorem">Birkhoff-von Neumann theorem</a>.
+		</p>
+
+        <hr>
+ 		<p id="fn1" class="footnote"><sup>1</sup>
+ 			By ''Alice knows X'' I mean that Alice can observe the realization of $X$.
+ 		</p>
+ 		<p id="fn2" class="footnote"><sup>2</sup>
+ 			Shannon's article was declassified in 1949.
+ 		</p>
+ 		<p id="fn3" class="footnote"><sup>3</sup>
+ 			If $Y$ is uniform and independent of $X$ then $\forall (x,y) \in \mathcal{X} \times \mathcal{Y}, \mathbb{P}(Y = y \mid X = x) = 1/\#\mathcal{Y}$.
+ 		</p>
+    </main>
+
+</body>
+</html>
