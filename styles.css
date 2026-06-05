@@ -73,6 +73,10 @@ p.footer-text {
     margin: 0em;
 }
 
+.quote-author {
+    text-align: right;
+}
+
 /* paper list */
 ul.papers {
     list-style: none;
