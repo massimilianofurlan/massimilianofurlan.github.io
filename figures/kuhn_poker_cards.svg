@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="116" viewBox="0 0 480 116" font-family="Georgia, 'Times New Roman', serif" font-size="14" text-anchor="middle">
+  <g fill="#fff" stroke="#000" stroke-width="1.1">
+    <rect x="100" y="14" width="72" height="88"/>
+    <rect x="204" y="14" width="72" height="88"/>
+    <rect x="308" y="14" width="72" height="88"/>
+  </g>
+  <text x="136" y="63">J</text>
+  <text x="240" y="63">Q</text>
+  <text x="344" y="63">K</text>
+</svg>
