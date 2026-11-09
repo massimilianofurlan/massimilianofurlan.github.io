@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="196" height="106" viewBox="0 0 196 106" font-family="Georgia, 'Times New Roman', serif" font-size="14" text-anchor="middle">
+  <path d="M 66 36 H 194 V 104 H 66 Z M 130 36 V 104 M 66 70 H 194" fill="none" stroke="#000"/>
+  <text x="34" y="24">1 \ 2</text>
+  <text x="98" y="24">H</text>
+  <text x="162" y="24">T</text>
+  <text x="34" y="58">H</text>
+  <text x="98" y="58">+1, −1</text>
+  <text x="162" y="58">−1, +1</text>
+  <text x="124" y="50">*</text>
+  <text x="188" y="50">*</text>
+  <text x="34" y="92">T</text>
+  <text x="98" y="92">−1, +1</text>
+  <text x="162" y="92">+1, −1</text>
+</svg>

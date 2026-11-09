@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="40 32 540 148">
+  <defs>
+    <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse">
+      <rect width="7" height="7" fill="#f5f5f5"/>
+      <path d="M -1 1 L 1 -1 M 0 7 L 7 0 M 6 8 L 8 6" stroke="#aaa" stroke-width="0.6"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 Z"/>
+    </marker>
+  </defs>
+  <rect x="146" y="42" width="96" height="64" fill="url(#hatch)"/>
+  <g fill="none" stroke="#000" stroke-width="1.1">
+    <rect x="50" y="42" width="192" height="128"/>
+    <path d="M 82 42 V 170 M 114 42 V 170 M 146 42 V 170 M 178 42 V 170 M 210 42 V 170 M 50 74 H 242 M 50 106 H 242 M 50 138 H 242"/>
+    <path d="M 378 42 H 474 V 106 H 570 V 170 H 378 Z"/>
+    <path d="M 410 42 V 170 M 442 42 V 170 M 474 106 V 170 M 506 106 V 170 M 538 106 V 170 M 378 74 H 474 M 378 106 H 474 M 378 138 H 570"/>
+    <path d="M 61 149 L 71 159 M 61 159 L 71 149 M 389 149 L 399 159 M 389 159 L 399 149"/>
+    <path d="M 268 106 H 350" marker-end="url(#arrow)"/>
+  </g>
+  <circle cx="162" cy="90" r="3"/>
+</svg>

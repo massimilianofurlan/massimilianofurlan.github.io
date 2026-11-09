@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=600, user-scalable=yes">
+    <title>Games - Massimiliano Furlan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- navigation bar section -->
+    <nav id="navbar">
+        <span class="nav-item">[<a href="index.html">Home</a>]</span>
+        <span class="nav-item">[<a href="resume.html">Curriculum</a>]</span>
+        <span class="nav-item">[<a href="bookmarks.html">Bookmarks</a>]</span>
+        <span class="nav-item">[<a href="games.html" aria-current="page">Games</a>]</span>
+        <span class="nav-item">[<a href="photos.html">Photos</a>]</span>
+    </nav>
+
+
+    <!-- main content section -->
+    <main>
+
+        <!-- header section -->
+        <header>
+            <h1>Games</h1>
+        </header>
+
+        <!-- the big match section -->
+        <section id="the-big-match">
+            <h2>
+                The Big Match
+                <span class="game-reference">(<a href="https://www.jstor.org/stable/j.ctt1b9x26z.13" target="_blank" rel="noopener noreferrer">Gillette, 1957</a>; <a href="https://doi.org/10.1214/aoms/1177698513" target="_blank" rel="noopener noreferrer">Blackwell and Ferguson, 1968</a>)</span>
+            </h2>
+            <p>
+                Every day player two chooses heads or tails, and player one tries to predict his choice. If player one is correct, player two pays her one dollar; otherwise, she pays him one dollar. This continues as long as player one predicts tails. The first day she predicts heads is the big match. Whoever wins that day receives one dollar from the loser every day thereafter, ad infinitum. Player one maximizes the expected limsup of her average payoff; player two minimizes it.
+            </p>
+            <figure class="game-figure">
+                <img class="game-diagram payoff-matrix" src="figures/big_match.svg" width="196" height="106">
+            </figure>
+            <p>
+                Player two has a straightforward optimal strategy. Not so straightforward for player one.
+            </p>
+        </section>
+
+        <!-- chomp section -->
+        <section id="chomp">
+            <h2>
+                Chomp
+                <span class="game-reference">(<a href="https://doi.org/10.2307/2319446" target="_blank" rel="noopener noreferrer">Gale, 1974</a>)</span>
+            </h2>
+            <p>
+                There is an <var>m</var> × <var>n</var> chocolate bar whose bottom left square cell is poisoned. Two players take turns choosing a (still extant) square and eating all remaining chocolate in the rectangle extending from that square to the top right corner of the (original) chocolate bar. The player who eats the poisoned square loses.
+            </p>
+            <figure class="game-figure">
+                <img class="game-diagram" src="figures/chomp.svg" width="540" height="148">
+            </figure>
+            <p>
+                The first player can guarantee a win, though it might take some time to figure out how.
+            </p>
+        </section>
+
+        <!-- pick the largest number section -->
+        <section id="pick-the-largest-number">
+            <h2>
+                Pick the largest number
+                <span class="game-reference">(<a href="https://isl.stanford.edu/people/cover/papers/paper73.pdf" target="_blank" rel="noopener noreferrer">Cover, 1987</a>)</span>
+            </h2>
+            <p>
+                Player one writes two distinct positive integers on separate slips of paper and places them face down. One of the two slips is turned over uniformly at random, and player two has to guess whether its number is the larger of the two. Player two wins if the guess is correct; otherwise, player one wins.
+            </p>
+            <figure class="game-figure">
+                <img class="game-diagram" src="figures/pick_the_largest_number.svg" width="480" height="116">
+            </figure>
+            <p>
+                Player two can guarantee herself a win with probability strictly greater than one half.
+            </p>
+        </section>
+
+        <!-- kuhn poker section -->
+        <section id="kuhn-poker">
+            <h2>
+                Kuhn poker
+                <span class="game-reference">(<a href="https://sites.math.rutgers.edu/~zeilberg/akherim/PokerPapers/Kuhn1951.pdf" target="_blank" rel="noopener noreferrer">Kuhn, 1950</a>)</span>
+            </h2>
+            <p>
+                Two players each put one dollar into the pot and receive one of three cards, J, Q or K. Each sees only their own card. Starting with player one, the players take turns betting one dollar or passing. Two consecutive bets or two consecutive passes end the game, and the player holding the higher card wins the pot. A player who passes after a bet loses the pot.
+            </p>
+            <figure class="game-figure">
+                <img class="game-diagram poker-tree" src="figures/kuhn_poker.svg" width="660" height="810">
+            </figure>
+            <p>
+                The ex-ante strategic form of the Bayesian game, restricted to the set of strategies that survive iterated elimination of weakly dominated strategies, is given below. A player’s strategy is represented by a triple specifying her behavior when she holds J, Q, or K, respectively. P means pass and B means bet.
+            </p>
+            <figure class="game-figure">
+                <img class="game-diagram payoff-matrix" src="figures/kuhn_poker_payoffs.svg" width="564" height="310">
+            </figure>
+            <p>
+                In all solutions, with some probability player two bluffs (bets) when she holds the lowest card.
+            </p>
+        </section>
+
+        <!-- two-finger morra section -->
+        <section id="two-finger-morra">
+            <h2>
+                Two-finger morra
+                <span class="game-reference">(<a href="https://doi.org/10.1137/1007008" target="_blank" rel="noopener noreferrer">Good, 1965</a>)</span>
+            </h2>
+            <p>
+                There are two players. Each shows one or two fingers and, at the same time, announces a guess of the number shown by the opponent. If both players’ guesses are right or both are wrong, the game is drawn. Otherwise, the player who guessed correctly wins from the opponent an amount equal to the total number of fingers shown.
+            </p>
+            <figure class="game-figure">
+                <img class="game-diagram payoff-matrix" src="figures/two_finger_morra.svg" width="324" height="174">
+            </figure>
+            <p>
+                There are infinitely many equilibria.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- footer section -->
+    <footer>
+        <hr>
+        <p class="footer-text">© 2026 Massimiliano Furlan</p>
+    </footer>
+
+</body>
+</html>

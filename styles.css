@@ -157,3 +157,29 @@ ul.papers li {
     margin-top: 0.3em;
     color: #333;
 }
+
+/* games */
+.game-figure {
+    margin: 0.85em 0;
+}
+
+.game-diagram {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.game-diagram.poker-tree {
+    max-width: 660px;
+}
+
+.game-reference {
+    font-weight: normal;
+}
+
+.game-diagram.payoff-matrix {
+    width: auto;
+    max-width: 100%;
+}

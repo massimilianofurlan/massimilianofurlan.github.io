@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 810" font-family="Georgia, 'Times New Roman', serif" font-size="14">
+  <defs>
+    <g id="subtree">
+      <g fill="none" stroke="#000" stroke-width="1.1">
+        <path d="M 174 80 L 306 48 M 174 80 L 306 112"/>
+        <path d="M 306 48 L 438 26 M 306 48 L 438 72"/>
+        <path d="M 306 112 L 438 98 M 306 112 L 438 134"/>
+        <path d="M 438 72 L 576 56 M 438 72 L 576 88"/>
+      </g>
+      <g fill="#fff" stroke="#000" stroke-width="1.1">
+        <circle cx="174" cy="80" r="9"/>
+        <circle cx="306" cy="48" r="9"/>
+        <circle cx="306" cy="112" r="9"/>
+        <circle cx="438" cy="72" r="9"/>
+      </g>
+      <g text-anchor="middle">
+        <text x="111" y="98">1/6</text>
+        <text x="174" y="84">1</text>
+        <text x="306" y="52">2</text>
+        <text x="306" y="116">2</text>
+        <text x="438" y="76">1</text>
+        <text x="236" y="57">pass</text>
+        <text x="236" y="111">bet</text>
+        <text x="370" y="31">pass</text>
+        <text x="370" y="75">bet</text>
+        <text x="370" y="101">pass</text>
+        <text x="370" y="134">bet</text>
+        <text x="535" y="55">pass</text>
+        <text x="535" y="101">bet</text>
+      </g>
+      <circle cx="438" cy="26" r="2"/>
+      <circle cx="438" cy="98" r="2"/>
+      <circle cx="438" cy="134" r="2"/>
+      <circle cx="576" cy="56" r="2"/>
+      <circle cx="576" cy="88" r="2"/>
+      <text x="448" y="103">(+1, −1)</text>
+      <text x="586" y="61">(−1, +1)</text>
+    </g>
+    <g id="lower_card">
+      <use href="#subtree"/>
+      <text x="448" y="31">(−1, +1)</text>
+      <text x="448" y="139">(−2, +2)</text>
+      <text x="586" y="93">(−2, +2)</text>
+    </g>
+    <g id="higher_card">
+      <use href="#subtree"/>
+      <text x="448" y="31">(+1, −1)</text>
+      <text x="448" y="139">(+2, −2)</text>
+      <text x="586" y="93">(+2, −2)</text>
+    </g>
+  </defs>
+  <rect width="660" height="810" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="1.1">
+    <path d="M 28 410 L 76 80 H 174"/>
+    <path d="M 28 410 L 76 212 H 174"/>
+    <path d="M 28 410 L 76 344 H 174"/>
+    <path d="M 28 410 L 76 476 H 174"/>
+    <path d="M 28 410 L 76 608 H 174"/>
+    <path d="M 28 410 L 76 740 H 174"/>
+  </g>
+  <g fill="none" stroke="#000" stroke-dasharray="4 4">
+    <path d="M 174 89 C 142 124 142 168 174 203"/>
+    <path d="M 174 353 C 142 388 142 432 174 467"/>
+    <path d="M 174 617 C 142 652 142 696 174 731"/>
+    <path d="M 306 453 C 280 488 280 532 306 567"/>
+    <path d="M 306 57 C 248 268 248 488 306 699"/>
+    <path d="M 306 189 C 280 224 280 268 306 303"/>
+    <path d="M 306 517 C 334 552 334 596 306 631"/>
+    <path d="M 306 121 C 366 332 366 552 306 763"/>
+    <path d="M 306 253 C 334 288 334 332 306 367"/>
+    <path d="M 438 81 C 408 116 408 160 438 195"/>
+    <path d="M 438 345 C 408 380 408 424 438 459"/>
+    <path d="M 438 609 C 408 644 408 688 438 723"/>
+  </g>
+  <use href="#lower_card"/>
+  <use href="#lower_card" y="132"/>
+  <use href="#lower_card" y="264"/>
+  <use href="#higher_card" y="396"/>
+  <use href="#higher_card" y="528"/>
+  <use href="#higher_card" y="660"/>
+  <rect x="17" y="399" width="22" height="22" fill="#fff" stroke="#000" stroke-width="1.1"/>
+  <g text-anchor="middle">
+    <text x="28" y="415">N</text>
+    <text x="111" y="71">(J,Q)</text>
+    <text x="111" y="203">(J,K)</text>
+    <text x="111" y="335">(Q,K)</text>
+    <text x="111" y="467">(Q,J)</text>
+    <text x="111" y="599">(K,J)</text>
+    <text x="111" y="731">(K,Q)</text>
+  </g>
+</svg>
